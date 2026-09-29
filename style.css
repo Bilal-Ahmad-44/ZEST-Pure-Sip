@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  background-color: rgb(249, 246, 246);
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#navbar-left {
+  display: flex;
+  gap: 5px;
+}
+
+#logo {
+  width: 60px;
+  border-radius: 50%;
+}
+
+/* navbar middle div  */
+.navbar-first-list {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-around;
+}
+
+.navbar-first-list li {
+  height: fit-content;
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 8px;
+  list-style: none;
+  padding: 8px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.navbar-first-list li a {
+  text-decoration: none;
+  color: green;
+  display: flex;
+}
+
+/* navbar right side div */
+
+#navbar-right {
+  justify-content: center;
+  align-content: center;
+  text-align: end;
+}
+.button-1 {
+  background-color: white;
+  padding: 5px;
+  border-radius: 8px;
+  color: blue;
+  font-size: medium;
+}
+.button-1:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+}
+
+/* for pc ,laptop, etc picture  */
+
+#background-image {
+  width: 100%;
+  height: 87vh;
+  z-index: -1;
+}
+
+/* for mobile size picture  */
+
+#mobile-size-bg-picture {
+  display: none;
+}
+
+/* writing on background image */
+.background-writing {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  z-index: 1;
+}
+/* red writing on background writing */
+#name {
+  color: red;
+}
+/* zest color green  */
+span {
+  color: green;
+  font-size: 100px;
+  text-decoration: underline;
+}
+
+/*============= two button in background image =========== */
+.two-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.button-2 {
+  background-color: blue;
+  padding: 8px 10px;
+  width: fit-content;
+  border-radius: 8px;
+  color: white;
+  font-size: medium;
+}
+.button-2:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: white;
+  color: blue;
+}
+.button-3 {
+  background-color: white;
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: blue;
+  font-size: medium;
+}
+.button-3:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+}
+.button-5 {
+  background-color: blue;
+  padding: 8px 10px;
+  width: fit-content;
+  border-radius: 8px;
+  color: white;
+  font-size: medium;
+}
+.button-5 :hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* ======================================================== */
+
+.zest-properties {
+  width: 100%;
+  /* height: 300px; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.quality {
+  width: 250px;
+  height: 120px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 5px;
+}
+
+/* second section bottle picture  */
+
+.bottle-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  border-radius: 10px;
+  padding: 40px 10px;
+  background-color: lightblue;
+  justify-content: space-around;
+}
+
+/* above three bottle section  */
+.three-bottle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.two-bottle {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.bottle-image {
+  width: 200px;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 50px;
+  border-top: 2px solid green;
+  border-left: 2px solid green;
+  border-right: 2px solid red;
+  border-bottom: 2px solid red;
+}
+video {
+  width: 320px;
+  height: 300px;
+  align-content: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: lightblue;
+  padding: 20px 20px;
+  text-align: center;
+  /* border: 1px solid black; */
+  /* border-top-right-radius: 70px;
+  border-bottom-left-radius: 70px; */
+}
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.footer-above {
+  width: 100%;
+  font-size: small;
+  display: flex;
+  padding: 10px;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footer-3 {
+  width: 200px;
+}
+
+.footer-below {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+/* ======================Meadia Quearies =================== */
+
+@media (max-width: 450px) {
+  .navbar-first-list {
+    display: none;
+  }
+  #navbar-left div h2 {
+    font-size: small;
+  }
+  #background-image {
+    display: none;
+  }
+  #mobile-size-bg-picture {
+    display: flex;
+    width: 100%;
+    height: 87vh;
+    z-index: -1;
+  }
+}
